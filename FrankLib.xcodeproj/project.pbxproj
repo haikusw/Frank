@@ -1,0 +1,1135 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F13B41013E119340080DB75 /* OrientationCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B3FA13E119340080DB75 /* OrientationCommand.m */; };
+		2F13B41113E119340080DB75 /* OrientationCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B3FB13E119340080DB75 /* OrientationCommand.h */; };
+		2F13B41213E119340080DB75 /* AppCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B3FC13E119340080DB75 /* AppCommand.m */; };
+		2F13B41313E119340080DB75 /* AppCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B3FD13E119340080DB75 /* AppCommand.h */; };
+		2F13B41413E119340080DB75 /* Operation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B3FE13E119340080DB75 /* Operation.h */; };
+		2F13B41513E119340080DB75 /* Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B3FF13E119340080DB75 /* Operation.m */; };
+		2F13B41613E119340080DB75 /* DumpCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B40013E119340080DB75 /* DumpCommand.h */; };
+		2F13B41713E119340080DB75 /* DumpCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B40113E119340080DB75 /* DumpCommand.m */; };
+		2F13B41813E119340080DB75 /* FrankCommandRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B40213E119340080DB75 /* FrankCommandRoute.h */; };
+		2F13B41913E119340080DB75 /* FrankCommandRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B40313E119340080DB75 /* FrankCommandRoute.m */; };
+		2F13B41A13E119340080DB75 /* FrankServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B40413E119340080DB75 /* FrankServer.h */; };
+		2F13B41B13E119340080DB75 /* FrankServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B40513E119340080DB75 /* FrankServer.m */; };
+		2F13B41C13E119340080DB75 /* MapOperationCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B40613E119340080DB75 /* MapOperationCommand.h */; };
+		2F13B41D13E119340080DB75 /* MapOperationCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B40713E119340080DB75 /* MapOperationCommand.m */; };
+		2F13B41E13E119340080DB75 /* RequestRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B40813E119340080DB75 /* RequestRouter.h */; };
+		2F13B41F13E119340080DB75 /* RequestRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B40913E119340080DB75 /* RequestRouter.m */; };
+		2F13B42013E119340080DB75 /* RoutingHTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B40A13E119340080DB75 /* RoutingHTTPConnection.h */; };
+		2F13B42113E119340080DB75 /* RoutingHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B40B13E119340080DB75 /* RoutingHTTPConnection.m */; };
+		2F13B42213E119340080DB75 /* StaticResourcesRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B40C13E119340080DB75 /* StaticResourcesRoute.h */; };
+		2F13B42313E119340080DB75 /* StaticResourcesRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B40D13E119340080DB75 /* StaticResourcesRoute.m */; };
+		2F13B42413E119340080DB75 /* UISpecCommandReceiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B40E13E119340080DB75 /* UISpecCommandReceiver.h */; };
+		2F13B42513E119340080DB75 /* UISpecCommandReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B40F13E119340080DB75 /* UISpecCommandReceiver.m */; };
+		2F13B48C13E1193B0080DB75 /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B42813E1193B0080DB75 /* JSON.h */; };
+		2F13B48D13E1193B0080DB75 /* NSObject+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B42913E1193B0080DB75 /* NSObject+SBJSON.h */; };
+		2F13B48E13E1193B0080DB75 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B42A13E1193B0080DB75 /* NSObject+SBJSON.m */; };
+		2F13B48F13E1193B0080DB75 /* NSString+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B42B13E1193B0080DB75 /* NSString+SBJSON.h */; };
+		2F13B49013E1193B0080DB75 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B42C13E1193B0080DB75 /* NSString+SBJSON.m */; };
+		2F13B49113E1193B0080DB75 /* SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B42D13E1193B0080DB75 /* SBJSON.h */; };
+		2F13B49213E1193B0080DB75 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B42E13E1193B0080DB75 /* SBJSON.m */; };
+		2F13B49313E1193B0080DB75 /* SBJsonBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B42F13E1193B0080DB75 /* SBJsonBase.h */; };
+		2F13B49413E1193B0080DB75 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B43013E1193B0080DB75 /* SBJsonBase.m */; };
+		2F13B49513E1193B0080DB75 /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B43113E1193B0080DB75 /* SBJsonParser.h */; };
+		2F13B49613E1193B0080DB75 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B43213E1193B0080DB75 /* SBJsonParser.m */; };
+		2F13B49713E1193B0080DB75 /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B43313E1193B0080DB75 /* SBJsonWriter.h */; };
+		2F13B49813E1193B0080DB75 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B43413E1193B0080DB75 /* SBJsonWriter.m */; };
+		2F13B49913E1193B0080DB75 /* UIQueryScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B43713E1193B0080DB75 /* UIQueryScrollView.h */; };
+		2F13B49A13E1193B0080DB75 /* UIQueryScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B43813E1193B0080DB75 /* UIQueryScrollView.m */; };
+		2F13B49B13E1193B0080DB75 /* UIQuerySearchBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B43913E1193B0080DB75 /* UIQuerySearchBar.h */; };
+		2F13B49C13E1193B0080DB75 /* UIQuerySearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B43A13E1193B0080DB75 /* UIQuerySearchBar.m */; };
+		2F13B49D13E1193B0080DB75 /* UIQuerySegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B43B13E1193B0080DB75 /* UIQuerySegmentedControl.h */; };
+		2F13B49E13E1193B0080DB75 /* UIQuerySegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B43C13E1193B0080DB75 /* UIQuerySegmentedControl.m */; };
+		2F13B49F13E1193B0080DB75 /* UIQueryTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B43D13E1193B0080DB75 /* UIQueryTabBar.h */; };
+		2F13B4A013E1193B0080DB75 /* UIQueryTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B43E13E1193B0080DB75 /* UIQueryTabBar.m */; };
+		2F13B4A113E1193B0080DB75 /* UIQueryTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B43F13E1193B0080DB75 /* UIQueryTableView.h */; };
+		2F13B4A213E1193B0080DB75 /* UIQueryTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B44013E1193B0080DB75 /* UIQueryTableView.m */; };
+		2F13B4A313E1193B0080DB75 /* UIQueryTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B44113E1193B0080DB75 /* UIQueryTableViewCell.h */; };
+		2F13B4A413E1193B0080DB75 /* UIQueryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B44213E1193B0080DB75 /* UIQueryTableViewCell.m */; };
+		2F13B4A513E1193B0080DB75 /* UIQueryWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B44313E1193B0080DB75 /* UIQueryWebView.h */; };
+		2F13B4A613E1193B0080DB75 /* UIQueryWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B44413E1193B0080DB75 /* UIQueryWebView.m */; };
+		2F13B4A713E1193B0080DB75 /* Recordable.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B44613E1193B0080DB75 /* Recordable.h */; };
+		2F13B4A813E1193B0080DB75 /* Recordable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B44713E1193B0080DB75 /* Recordable.m */; };
+		2F13B4A913E1193B0080DB75 /* UIChildren.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B44813E1193B0080DB75 /* UIChildren.h */; };
+		2F13B4AA13E1193B0080DB75 /* UIChildren.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B44913E1193B0080DB75 /* UIChildren.m */; };
+		2F13B4AB13E1193B0080DB75 /* UIConsoleLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B44A13E1193B0080DB75 /* UIConsoleLog.h */; };
+		2F13B4AC13E1193B0080DB75 /* UIConsoleLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B44B13E1193B0080DB75 /* UIConsoleLog.m */; };
+		2F13B4AD13E1193B0080DB75 /* UIDescendants.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B44C13E1193B0080DB75 /* UIDescendants.h */; };
+		2F13B4AE13E1193B0080DB75 /* UIDescendants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B44D13E1193B0080DB75 /* UIDescendants.m */; };
+		2F13B4AF13E1193B0080DB75 /* UIExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B44E13E1193B0080DB75 /* UIExpectation.h */; };
+		2F13B4B013E1193B0080DB75 /* UIExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B44F13E1193B0080DB75 /* UIExpectation.m */; };
+		2F13B4B113E1193B0080DB75 /* UIFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B45013E1193B0080DB75 /* UIFilter.h */; };
+		2F13B4B213E1193B0080DB75 /* UIFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B45113E1193B0080DB75 /* UIFilter.m */; };
+		2F13B4B313E1193B0080DB75 /* UILog.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B45213E1193B0080DB75 /* UILog.h */; };
+		2F13B4B413E1193B0080DB75 /* UIMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B45313E1193B0080DB75 /* UIMatcher.h */; };
+		2F13B4B513E1193B0080DB75 /* UIMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B45413E1193B0080DB75 /* UIMatcher.m */; };
+		2F13B4B613E1193B0080DB75 /* UIParents.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B45513E1193B0080DB75 /* UIParents.h */; };
+		2F13B4B713E1193B0080DB75 /* UIParents.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B45613E1193B0080DB75 /* UIParents.m */; };
+		2F13B4B813E1193B0080DB75 /* UIQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B45713E1193B0080DB75 /* UIQuery.h */; };
+		2F13B4B913E1193B0080DB75 /* UIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B45813E1193B0080DB75 /* UIQuery.m */; };
+		2F13B4BA13E1193B0080DB75 /* UIQueryAll.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B45913E1193B0080DB75 /* UIQueryAll.h */; };
+		2F13B4BB13E1193B0080DB75 /* UIQueryAll.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B45A13E1193B0080DB75 /* UIQueryAll.m */; };
+		2F13B4BC13E1193B0080DB75 /* UIQueryExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B45B13E1193B0080DB75 /* UIQueryExpectation.h */; };
+		2F13B4BD13E1193B0080DB75 /* UIQueryExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B45C13E1193B0080DB75 /* UIQueryExpectation.m */; };
+		2F13B4BE13E1193B0080DB75 /* UIRedoer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B45D13E1193B0080DB75 /* UIRedoer.h */; };
+		2F13B4BF13E1193B0080DB75 /* UIRedoer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B45E13E1193B0080DB75 /* UIRedoer.m */; };
+		2F13B4C013E1193B0080DB75 /* UISwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B45F13E1193B0080DB75 /* UISwizzle.h */; };
+		2F13B4C113E1193B0080DB75 /* UISwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B46013E1193B0080DB75 /* UISwizzle.m */; };
+		2F13B4C213E1193B0080DB75 /* UITraversal.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B46113E1193B0080DB75 /* UITraversal.h */; };
+		2F13B4C313E1193B0080DB75 /* UITraversal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B46213E1193B0080DB75 /* UITraversal.m */; };
+		2F13B4C413E1193B0080DB75 /* ViewFilterSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B46313E1193B0080DB75 /* ViewFilterSwizzler.h */; };
+		2F13B4C513E1193B0080DB75 /* ViewFilterSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B46413E1193B0080DB75 /* ViewFilterSwizzler.m */; };
+		2F13B4C613E1193B0080DB75 /* UISpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B46613E1193B0080DB75 /* UISpec.h */; };
+		2F13B4C713E1193B0080DB75 /* UISpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B46713E1193B0080DB75 /* UISpec.m */; };
+		2F13B4C813E1193B0080DB75 /* CallCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B46913E1193B0080DB75 /* CallCache.h */; };
+		2F13B4C913E1193B0080DB75 /* CallCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B46A13E1193B0080DB75 /* CallCache.m */; };
+		2F13B4CA13E1193B0080DB75 /* NSNumberCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B46B13E1193B0080DB75 /* NSNumberCreator.h */; };
+		2F13B4CB13E1193B0080DB75 /* NSNumberCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B46C13E1193B0080DB75 /* NSNumberCreator.m */; };
+		2F13B4CC13E1193B0080DB75 /* ReturnCacher.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B46D13E1193B0080DB75 /* ReturnCacher.h */; };
+		2F13B4CD13E1193B0080DB75 /* ReturnCacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B46E13E1193B0080DB75 /* ReturnCacher.m */; };
+		2F13B4CE13E1193B0080DB75 /* UIBug.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B46F13E1193B0080DB75 /* UIBug.h */; };
+		2F13B4CF13E1193B0080DB75 /* UIBug.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B47013E1193B0080DB75 /* UIBug.m */; };
+		2F13B4D013E1193B0080DB75 /* UIConsole.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B47113E1193B0080DB75 /* UIConsole.h */; };
+		2F13B4D113E1193B0080DB75 /* UIConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B47213E1193B0080DB75 /* UIConsole.m */; };
+		2F13B4D213E1193B0080DB75 /* UIInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B47313E1193B0080DB75 /* UIInspector.h */; };
+		2F13B4D313E1193B0080DB75 /* UIInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B47413E1193B0080DB75 /* UIInspector.m */; };
+		2F13B4D413E1193B0080DB75 /* UIProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B47513E1193B0080DB75 /* UIProxy.h */; };
+		2F13B4D513E1193B0080DB75 /* UIProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B47613E1193B0080DB75 /* UIProxy.m */; };
+		2F13B4D613E1193B0080DB75 /* WaitUntilIdle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B47713E1193B0080DB75 /* WaitUntilIdle.h */; };
+		2F13B4D713E1193B0080DB75 /* WaitUntilIdle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B47813E1193B0080DB75 /* WaitUntilIdle.m */; };
+		2F13B4D813E1193B0080DB75 /* DDData.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B47A13E1193B0080DB75 /* DDData.h */; };
+		2F13B4D913E1193B0080DB75 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B47B13E1193B0080DB75 /* DDData.m */; };
+		2F13B4DA13E1193B0080DB75 /* DDNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B47C13E1193B0080DB75 /* DDNumber.h */; };
+		2F13B4DB13E1193B0080DB75 /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B47D13E1193B0080DB75 /* DDNumber.m */; };
+		2F13B4DC13E1193B0080DB75 /* DDRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B47E13E1193B0080DB75 /* DDRange.h */; };
+		2F13B4DD13E1193B0080DB75 /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B47F13E1193B0080DB75 /* DDRange.m */; };
+		2F13B4DE13E1193B0080DB75 /* HTTPAuthenticationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B48013E1193B0080DB75 /* HTTPAuthenticationRequest.h */; };
+		2F13B4DF13E1193B0080DB75 /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B48113E1193B0080DB75 /* HTTPAuthenticationRequest.m */; };
+		2F13B4E013E1193B0080DB75 /* HTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B48213E1193B0080DB75 /* HTTPConnection.h */; };
+		2F13B4E113E1193B0080DB75 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B48313E1193B0080DB75 /* HTTPConnection.m */; };
+		2F13B4E213E1193B0080DB75 /* HTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B48413E1193B0080DB75 /* HTTPResponse.h */; };
+		2F13B4E313E1193B0080DB75 /* HTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B48513E1193B0080DB75 /* HTTPResponse.m */; };
+		2F13B4E413E1193B0080DB75 /* HTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B48613E1193B0080DB75 /* HTTPServer.h */; };
+		2F13B4E513E1193B0080DB75 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B48713E1193B0080DB75 /* HTTPServer.m */; };
+		2F13B4E613E1193B0080DB75 /* MyHTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B48813E1193B0080DB75 /* MyHTTPConnection.h */; };
+		2F13B4E713E1193B0080DB75 /* MyHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B48913E1193B0080DB75 /* MyHTTPConnection.m */; };
+		2F13B4E813E1193B0080DB75 /* AsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B48A13E1193B0080DB75 /* AsyncSocket.h */; };
+		2F13B4E913E1193B0080DB75 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B48B13E1193B0080DB75 /* AsyncSocket.m */; };
+		2F13B50113E119720080DB75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F13B50013E119720080DB75 /* UIKit.framework */; };
+		2F13B51D13E11C5D0080DB75 /* FrankServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B40413E119340080DB75 /* FrankServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F13B55413E11C5D0080DB75 /* OrientationCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B3FA13E119340080DB75 /* OrientationCommand.m */; };
+		2F13B55513E11C5D0080DB75 /* AppCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B3FC13E119340080DB75 /* AppCommand.m */; };
+		2F13B55613E11C5D0080DB75 /* Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B3FF13E119340080DB75 /* Operation.m */; };
+		2F13B55713E11C5D0080DB75 /* DumpCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B40113E119340080DB75 /* DumpCommand.m */; };
+		2F13B55813E11C5D0080DB75 /* FrankCommandRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B40313E119340080DB75 /* FrankCommandRoute.m */; };
+		2F13B55913E11C5D0080DB75 /* FrankServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B40513E119340080DB75 /* FrankServer.m */; };
+		2F13B55A13E11C5D0080DB75 /* MapOperationCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B40713E119340080DB75 /* MapOperationCommand.m */; };
+		2F13B55B13E11C5D0080DB75 /* RequestRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B40913E119340080DB75 /* RequestRouter.m */; };
+		2F13B55C13E11C5D0080DB75 /* RoutingHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B40B13E119340080DB75 /* RoutingHTTPConnection.m */; };
+		2F13B55D13E11C5D0080DB75 /* StaticResourcesRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B40D13E119340080DB75 /* StaticResourcesRoute.m */; };
+		2F13B55E13E11C5D0080DB75 /* UISpecCommandReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B40F13E119340080DB75 /* UISpecCommandReceiver.m */; };
+		2F13B55F13E11C5D0080DB75 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B42A13E1193B0080DB75 /* NSObject+SBJSON.m */; };
+		2F13B56013E11C5D0080DB75 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B42C13E1193B0080DB75 /* NSString+SBJSON.m */; };
+		2F13B56113E11C5D0080DB75 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B42E13E1193B0080DB75 /* SBJSON.m */; };
+		2F13B56213E11C5D0080DB75 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B43013E1193B0080DB75 /* SBJsonBase.m */; };
+		2F13B56313E11C5D0080DB75 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B43213E1193B0080DB75 /* SBJsonParser.m */; };
+		2F13B56413E11C5D0080DB75 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B43413E1193B0080DB75 /* SBJsonWriter.m */; };
+		2F13B56513E11C5D0080DB75 /* UIQueryScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B43813E1193B0080DB75 /* UIQueryScrollView.m */; };
+		2F13B56613E11C5D0080DB75 /* UIQuerySearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B43A13E1193B0080DB75 /* UIQuerySearchBar.m */; };
+		2F13B56713E11C5D0080DB75 /* UIQuerySegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B43C13E1193B0080DB75 /* UIQuerySegmentedControl.m */; };
+		2F13B56813E11C5D0080DB75 /* UIQueryTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B43E13E1193B0080DB75 /* UIQueryTabBar.m */; };
+		2F13B56913E11C5D0080DB75 /* UIQueryTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B44013E1193B0080DB75 /* UIQueryTableView.m */; };
+		2F13B56A13E11C5D0080DB75 /* UIQueryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B44213E1193B0080DB75 /* UIQueryTableViewCell.m */; };
+		2F13B56B13E11C5D0080DB75 /* UIQueryWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B44413E1193B0080DB75 /* UIQueryWebView.m */; };
+		2F13B56C13E11C5D0080DB75 /* Recordable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B44713E1193B0080DB75 /* Recordable.m */; };
+		2F13B56D13E11C5D0080DB75 /* UIChildren.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B44913E1193B0080DB75 /* UIChildren.m */; };
+		2F13B56E13E11C5D0080DB75 /* UIConsoleLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B44B13E1193B0080DB75 /* UIConsoleLog.m */; };
+		2F13B56F13E11C5D0080DB75 /* UIDescendants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B44D13E1193B0080DB75 /* UIDescendants.m */; };
+		2F13B57013E11C5D0080DB75 /* UIExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B44F13E1193B0080DB75 /* UIExpectation.m */; };
+		2F13B57113E11C5D0080DB75 /* UIFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B45113E1193B0080DB75 /* UIFilter.m */; };
+		2F13B57213E11C5D0080DB75 /* UIMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B45413E1193B0080DB75 /* UIMatcher.m */; };
+		2F13B57313E11C5D0080DB75 /* UIParents.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B45613E1193B0080DB75 /* UIParents.m */; };
+		2F13B57413E11C5D0080DB75 /* UIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B45813E1193B0080DB75 /* UIQuery.m */; };
+		2F13B57513E11C5D0080DB75 /* UIQueryAll.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B45A13E1193B0080DB75 /* UIQueryAll.m */; };
+		2F13B57613E11C5D0080DB75 /* UIQueryExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B45C13E1193B0080DB75 /* UIQueryExpectation.m */; };
+		2F13B57713E11C5D0080DB75 /* UIRedoer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B45E13E1193B0080DB75 /* UIRedoer.m */; };
+		2F13B57813E11C5D0080DB75 /* UISwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B46013E1193B0080DB75 /* UISwizzle.m */; };
+		2F13B57913E11C5D0080DB75 /* UITraversal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B46213E1193B0080DB75 /* UITraversal.m */; };
+		2F13B57A13E11C5D0080DB75 /* ViewFilterSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B46413E1193B0080DB75 /* ViewFilterSwizzler.m */; };
+		2F13B57B13E11C5D0080DB75 /* UISpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B46713E1193B0080DB75 /* UISpec.m */; };
+		2F13B57C13E11C5D0080DB75 /* CallCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B46A13E1193B0080DB75 /* CallCache.m */; };
+		2F13B57D13E11C5D0080DB75 /* NSNumberCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B46C13E1193B0080DB75 /* NSNumberCreator.m */; };
+		2F13B57E13E11C5D0080DB75 /* ReturnCacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B46E13E1193B0080DB75 /* ReturnCacher.m */; };
+		2F13B57F13E11C5D0080DB75 /* UIBug.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B47013E1193B0080DB75 /* UIBug.m */; };
+		2F13B58013E11C5D0080DB75 /* UIConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B47213E1193B0080DB75 /* UIConsole.m */; };
+		2F13B58113E11C5D0080DB75 /* UIInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B47413E1193B0080DB75 /* UIInspector.m */; };
+		2F13B58213E11C5D0080DB75 /* UIProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B47613E1193B0080DB75 /* UIProxy.m */; };
+		2F13B58313E11C5D0080DB75 /* WaitUntilIdle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B47813E1193B0080DB75 /* WaitUntilIdle.m */; };
+		2F13B58413E11C5D0080DB75 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B47B13E1193B0080DB75 /* DDData.m */; };
+		2F13B58513E11C5D0080DB75 /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B47D13E1193B0080DB75 /* DDNumber.m */; };
+		2F13B58613E11C5D0080DB75 /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B47F13E1193B0080DB75 /* DDRange.m */; };
+		2F13B58713E11C5D0080DB75 /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B48113E1193B0080DB75 /* HTTPAuthenticationRequest.m */; };
+		2F13B58813E11C5D0080DB75 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B48313E1193B0080DB75 /* HTTPConnection.m */; };
+		2F13B58913E11C5D0080DB75 /* HTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B48513E1193B0080DB75 /* HTTPResponse.m */; };
+		2F13B58A13E11C5D0080DB75 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B48713E1193B0080DB75 /* HTTPServer.m */; };
+		2F13B58B13E11C5D0080DB75 /* MyHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B48913E1193B0080DB75 /* MyHTTPConnection.m */; };
+		2F13B58C13E11C5D0080DB75 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B48B13E1193B0080DB75 /* AsyncSocket.m */; };
+		2F13B58E13E11C5D0080DB75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		2F13B58F13E11C5D0080DB75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F13B50013E119720080DB75 /* UIKit.framework */; };
+		2F13B65F13E120B30080DB75 /* VisibleTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B65D13E120B30080DB75 /* VisibleTouch.h */; };
+		2F13B66013E120B30080DB75 /* VisibleTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B65E13E120B30080DB75 /* VisibleTouch.m */; };
+		2F13B66913E120E90080DB75 /* VisibleTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B65E13E120B30080DB75 /* VisibleTouch.m */; };
+		2F13B66A13E120EA0080DB75 /* VisibleTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B65D13E120B30080DB75 /* VisibleTouch.h */; };
+		2F13B66B13E120F50080DB75 /* Recordable.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B44613E1193B0080DB75 /* Recordable.h */; };
+		2F13B66C13E121060080DB75 /* UIChildren.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B44813E1193B0080DB75 /* UIChildren.h */; };
+		2F13B66D13E1210B0080DB75 /* UIConsoleLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B44A13E1193B0080DB75 /* UIConsoleLog.h */; };
+		2F13B66E13E1210D0080DB75 /* UIDescendants.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B44C13E1193B0080DB75 /* UIDescendants.h */; };
+		2F13B66F13E1210E0080DB75 /* UIExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B44E13E1193B0080DB75 /* UIExpectation.h */; };
+		2F13B67013E1210E0080DB75 /* UIFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B45013E1193B0080DB75 /* UIFilter.h */; };
+		2F13B67113E1210F0080DB75 /* UILog.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B45213E1193B0080DB75 /* UILog.h */; };
+		2F13B67213E1210F0080DB75 /* UIMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B45313E1193B0080DB75 /* UIMatcher.h */; };
+		2F13B67313E1210F0080DB75 /* UIParents.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B45513E1193B0080DB75 /* UIParents.h */; };
+		2F13B67413E1210F0080DB75 /* UIQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B45713E1193B0080DB75 /* UIQuery.h */; };
+		2F13B67513E1210F0080DB75 /* UIQueryAll.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B45913E1193B0080DB75 /* UIQueryAll.h */; };
+		2F13B67613E121100080DB75 /* UIQueryExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B45B13E1193B0080DB75 /* UIQueryExpectation.h */; };
+		2F13B67713E121100080DB75 /* UIRedoer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B45D13E1193B0080DB75 /* UIRedoer.h */; };
+		2F13B67813E121100080DB75 /* UISwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B45F13E1193B0080DB75 /* UISwizzle.h */; };
+		2F13B67913E121100080DB75 /* UITraversal.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B46113E1193B0080DB75 /* UITraversal.h */; };
+		2F13B67A13E121110080DB75 /* ViewFilterSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B46313E1193B0080DB75 /* ViewFilterSwizzler.h */; };
+		2F13B67B13E121170080DB75 /* UIQueryScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B43713E1193B0080DB75 /* UIQueryScrollView.h */; };
+		2F13B67C13E121180080DB75 /* UIQuerySearchBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B43913E1193B0080DB75 /* UIQuerySearchBar.h */; };
+		2F13B67D13E121180080DB75 /* UIQuerySegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B43B13E1193B0080DB75 /* UIQuerySegmentedControl.h */; };
+		2F13B67E13E121180080DB75 /* UIQueryTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B43D13E1193B0080DB75 /* UIQueryTabBar.h */; };
+		2F13B67F13E121190080DB75 /* UIQueryTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B43F13E1193B0080DB75 /* UIQueryTableView.h */; };
+		2F13B68013E121190080DB75 /* UIQueryTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B44113E1193B0080DB75 /* UIQueryTableViewCell.h */; };
+		2F13B68113E121190080DB75 /* UIQueryWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B44313E1193B0080DB75 /* UIQueryWebView.h */; };
+		2F13B68213E121260080DB75 /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B42813E1193B0080DB75 /* JSON.h */; };
+		2F13B68313E121270080DB75 /* NSObject+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B42913E1193B0080DB75 /* NSObject+SBJSON.h */; };
+		2F13B68413E121290080DB75 /* NSString+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B42B13E1193B0080DB75 /* NSString+SBJSON.h */; };
+		2F13B68513E1212A0080DB75 /* SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B42D13E1193B0080DB75 /* SBJSON.h */; };
+		2F13B68613E1212B0080DB75 /* SBJsonBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B42F13E1193B0080DB75 /* SBJsonBase.h */; };
+		2F13B68713E1212B0080DB75 /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B43113E1193B0080DB75 /* SBJsonParser.h */; };
+		2F13B68813E1212C0080DB75 /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B43313E1193B0080DB75 /* SBJsonWriter.h */; };
+		2F13B68913E121330080DB75 /* AsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B48A13E1193B0080DB75 /* AsyncSocket.h */; };
+		2F13B68A13E121350080DB75 /* DDData.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B47A13E1193B0080DB75 /* DDData.h */; };
+		2F13B68E13E1213A0080DB75 /* DDNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B47C13E1193B0080DB75 /* DDNumber.h */; };
+		2F13B68F13E1213A0080DB75 /* DDRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B47E13E1193B0080DB75 /* DDRange.h */; };
+		2F13B69013E1213B0080DB75 /* HTTPAuthenticationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B48013E1193B0080DB75 /* HTTPAuthenticationRequest.h */; };
+		2F13B69113E1213C0080DB75 /* HTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B48213E1193B0080DB75 /* HTTPConnection.h */; };
+		2F13B69213E1213D0080DB75 /* HTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B48413E1193B0080DB75 /* HTTPResponse.h */; };
+		2F13B69313E1213E0080DB75 /* HTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B48613E1193B0080DB75 /* HTTPServer.h */; };
+		2F13B69413E1213F0080DB75 /* MyHTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B48813E1193B0080DB75 /* MyHTTPConnection.h */; };
+		2F13B69A13E121500080DB75 /* UISpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B46613E1193B0080DB75 /* UISpec.h */; };
+		2F13B69B13E121580080DB75 /* CallCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B46913E1193B0080DB75 /* CallCache.h */; };
+		2F13B69C13E121590080DB75 /* NSNumberCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B46B13E1193B0080DB75 /* NSNumberCreator.h */; };
+		2F13B69D13E1215A0080DB75 /* ReturnCacher.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B46D13E1193B0080DB75 /* ReturnCacher.h */; };
+		2F13B69E13E1215B0080DB75 /* UIBug.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B46F13E1193B0080DB75 /* UIBug.h */; };
+		2F13B69F13E1215B0080DB75 /* UIConsole.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B47113E1193B0080DB75 /* UIConsole.h */; };
+		2F13B6A013E1215C0080DB75 /* UIInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B47313E1193B0080DB75 /* UIInspector.h */; };
+		2F13B6A113E1215D0080DB75 /* UIProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B47513E1193B0080DB75 /* UIProxy.h */; };
+		2F13B6A213E1215D0080DB75 /* WaitUntilIdle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B47713E1193B0080DB75 /* WaitUntilIdle.h */; };
+		2F13B6A313E121630080DB75 /* RoutingHTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B40A13E119340080DB75 /* RoutingHTTPConnection.h */; };
+		2F13B6A413E121640080DB75 /* DumpCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B40013E119340080DB75 /* DumpCommand.h */; };
+		2F13B6A513E121640080DB75 /* AppCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B3FD13E119340080DB75 /* AppCommand.h */; };
+		2F13B6A613E121650080DB75 /* FrankCommandRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B40213E119340080DB75 /* FrankCommandRoute.h */; };
+		2F13B6A713E121650080DB75 /* StaticResourcesRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B40C13E119340080DB75 /* StaticResourcesRoute.h */; };
+		2F13B6A813E121660080DB75 /* Operation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B3FE13E119340080DB75 /* Operation.h */; };
+		2F13B6A913E121670080DB75 /* RequestRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B40813E119340080DB75 /* RequestRouter.h */; };
+		2F13B6AA13E121670080DB75 /* MapOperationCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B40613E119340080DB75 /* MapOperationCommand.h */; };
+		2F13B6AB13E121680080DB75 /* UISpecCommandReceiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B40E13E119340080DB75 /* UISpecCommandReceiver.h */; };
+		2F13B6AC13E121690080DB75 /* OrientationCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B3FB13E119340080DB75 /* OrientationCommand.h */; };
+		2F13B6AD13E1216D0080DB75 /* FrankLib_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* FrankLib_Prefix.pch */; };
+		2F13B6B413E1219C0080DB75 /* AccessibilityCheckCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B6B213E1219C0080DB75 /* AccessibilityCheckCommand.h */; };
+		2F13B6B513E1219C0080DB75 /* AccessibilityCheckCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B6B313E1219C0080DB75 /* AccessibilityCheckCommand.m */; };
+		2F13B6B613E1219C0080DB75 /* AccessibilityCheckCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F13B6B213E1219C0080DB75 /* AccessibilityCheckCommand.h */; };
+		2F13B6B713E1219C0080DB75 /* AccessibilityCheckCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F13B6B313E1219C0080DB75 /* AccessibilityCheckCommand.m */; };
+		2F13B6E113E12CE60080DB75 /* frank_static_resources.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2F13B4ED13E119560080DB75 /* frank_static_resources.bundle */; };
+		AA747D9F0F9514B9006C5449 /* FrankLib_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* FrankLib_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2F13B70313E12CED0080DB75 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				2F13B6E113E12CE60080DB75 /* frank_static_resources.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2F13B3FA13E119340080DB75 /* OrientationCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrientationCommand.m; path = src/OrientationCommand.m; sourceTree = "<group>"; };
+		2F13B3FB13E119340080DB75 /* OrientationCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrientationCommand.h; path = src/OrientationCommand.h; sourceTree = "<group>"; };
+		2F13B3FC13E119340080DB75 /* AppCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppCommand.m; path = src/AppCommand.m; sourceTree = "<group>"; };
+		2F13B3FD13E119340080DB75 /* AppCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppCommand.h; path = src/AppCommand.h; sourceTree = "<group>"; };
+		2F13B3FE13E119340080DB75 /* Operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Operation.h; path = src/Operation.h; sourceTree = "<group>"; };
+		2F13B3FF13E119340080DB75 /* Operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Operation.m; path = src/Operation.m; sourceTree = "<group>"; };
+		2F13B40013E119340080DB75 /* DumpCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DumpCommand.h; path = src/DumpCommand.h; sourceTree = "<group>"; };
+		2F13B40113E119340080DB75 /* DumpCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DumpCommand.m; path = src/DumpCommand.m; sourceTree = "<group>"; };
+		2F13B40213E119340080DB75 /* FrankCommandRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FrankCommandRoute.h; path = src/FrankCommandRoute.h; sourceTree = "<group>"; };
+		2F13B40313E119340080DB75 /* FrankCommandRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FrankCommandRoute.m; path = src/FrankCommandRoute.m; sourceTree = "<group>"; };
+		2F13B40413E119340080DB75 /* FrankServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FrankServer.h; path = src/FrankServer.h; sourceTree = "<group>"; };
+		2F13B40513E119340080DB75 /* FrankServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FrankServer.m; path = src/FrankServer.m; sourceTree = "<group>"; };
+		2F13B40613E119340080DB75 /* MapOperationCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapOperationCommand.h; path = src/MapOperationCommand.h; sourceTree = "<group>"; };
+		2F13B40713E119340080DB75 /* MapOperationCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapOperationCommand.m; path = src/MapOperationCommand.m; sourceTree = "<group>"; };
+		2F13B40813E119340080DB75 /* RequestRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestRouter.h; path = src/RequestRouter.h; sourceTree = "<group>"; };
+		2F13B40913E119340080DB75 /* RequestRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestRouter.m; path = src/RequestRouter.m; sourceTree = "<group>"; };
+		2F13B40A13E119340080DB75 /* RoutingHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoutingHTTPConnection.h; path = src/RoutingHTTPConnection.h; sourceTree = "<group>"; };
+		2F13B40B13E119340080DB75 /* RoutingHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoutingHTTPConnection.m; path = src/RoutingHTTPConnection.m; sourceTree = "<group>"; };
+		2F13B40C13E119340080DB75 /* StaticResourcesRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StaticResourcesRoute.h; path = src/StaticResourcesRoute.h; sourceTree = "<group>"; };
+		2F13B40D13E119340080DB75 /* StaticResourcesRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StaticResourcesRoute.m; path = src/StaticResourcesRoute.m; sourceTree = "<group>"; };
+		2F13B40E13E119340080DB75 /* UISpecCommandReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UISpecCommandReceiver.h; path = src/UISpecCommandReceiver.h; sourceTree = "<group>"; };
+		2F13B40F13E119340080DB75 /* UISpecCommandReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UISpecCommandReceiver.m; path = src/UISpecCommandReceiver.m; sourceTree = "<group>"; };
+		2F13B42813E1193B0080DB75 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		2F13B42913E1193B0080DB75 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		2F13B42A13E1193B0080DB75 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		2F13B42B13E1193B0080DB75 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		2F13B42C13E1193B0080DB75 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		2F13B42D13E1193B0080DB75 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		2F13B42E13E1193B0080DB75 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		2F13B42F13E1193B0080DB75 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		2F13B43013E1193B0080DB75 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		2F13B43113E1193B0080DB75 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		2F13B43213E1193B0080DB75 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		2F13B43313E1193B0080DB75 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		2F13B43413E1193B0080DB75 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		2F13B43713E1193B0080DB75 /* UIQueryScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQueryScrollView.h; sourceTree = "<group>"; };
+		2F13B43813E1193B0080DB75 /* UIQueryScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQueryScrollView.m; sourceTree = "<group>"; };
+		2F13B43913E1193B0080DB75 /* UIQuerySearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQuerySearchBar.h; sourceTree = "<group>"; };
+		2F13B43A13E1193B0080DB75 /* UIQuerySearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQuerySearchBar.m; sourceTree = "<group>"; };
+		2F13B43B13E1193B0080DB75 /* UIQuerySegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQuerySegmentedControl.h; sourceTree = "<group>"; };
+		2F13B43C13E1193B0080DB75 /* UIQuerySegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQuerySegmentedControl.m; sourceTree = "<group>"; };
+		2F13B43D13E1193B0080DB75 /* UIQueryTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQueryTabBar.h; sourceTree = "<group>"; };
+		2F13B43E13E1193B0080DB75 /* UIQueryTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQueryTabBar.m; sourceTree = "<group>"; };
+		2F13B43F13E1193B0080DB75 /* UIQueryTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQueryTableView.h; sourceTree = "<group>"; };
+		2F13B44013E1193B0080DB75 /* UIQueryTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQueryTableView.m; sourceTree = "<group>"; };
+		2F13B44113E1193B0080DB75 /* UIQueryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQueryTableViewCell.h; sourceTree = "<group>"; };
+		2F13B44213E1193B0080DB75 /* UIQueryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQueryTableViewCell.m; sourceTree = "<group>"; };
+		2F13B44313E1193B0080DB75 /* UIQueryWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQueryWebView.h; sourceTree = "<group>"; };
+		2F13B44413E1193B0080DB75 /* UIQueryWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQueryWebView.m; sourceTree = "<group>"; };
+		2F13B44613E1193B0080DB75 /* Recordable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recordable.h; sourceTree = "<group>"; };
+		2F13B44713E1193B0080DB75 /* Recordable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recordable.m; sourceTree = "<group>"; };
+		2F13B44813E1193B0080DB75 /* UIChildren.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIChildren.h; sourceTree = "<group>"; };
+		2F13B44913E1193B0080DB75 /* UIChildren.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIChildren.m; sourceTree = "<group>"; };
+		2F13B44A13E1193B0080DB75 /* UIConsoleLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConsoleLog.h; sourceTree = "<group>"; };
+		2F13B44B13E1193B0080DB75 /* UIConsoleLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIConsoleLog.m; sourceTree = "<group>"; };
+		2F13B44C13E1193B0080DB75 /* UIDescendants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDescendants.h; sourceTree = "<group>"; };
+		2F13B44D13E1193B0080DB75 /* UIDescendants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDescendants.m; sourceTree = "<group>"; };
+		2F13B44E13E1193B0080DB75 /* UIExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIExpectation.h; sourceTree = "<group>"; };
+		2F13B44F13E1193B0080DB75 /* UIExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIExpectation.m; sourceTree = "<group>"; };
+		2F13B45013E1193B0080DB75 /* UIFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFilter.h; sourceTree = "<group>"; };
+		2F13B45113E1193B0080DB75 /* UIFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFilter.m; sourceTree = "<group>"; };
+		2F13B45213E1193B0080DB75 /* UILog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILog.h; sourceTree = "<group>"; };
+		2F13B45313E1193B0080DB75 /* UIMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMatcher.h; sourceTree = "<group>"; };
+		2F13B45413E1193B0080DB75 /* UIMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMatcher.m; sourceTree = "<group>"; };
+		2F13B45513E1193B0080DB75 /* UIParents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIParents.h; sourceTree = "<group>"; };
+		2F13B45613E1193B0080DB75 /* UIParents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIParents.m; sourceTree = "<group>"; };
+		2F13B45713E1193B0080DB75 /* UIQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQuery.h; sourceTree = "<group>"; };
+		2F13B45813E1193B0080DB75 /* UIQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQuery.m; sourceTree = "<group>"; };
+		2F13B45913E1193B0080DB75 /* UIQueryAll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQueryAll.h; sourceTree = "<group>"; };
+		2F13B45A13E1193B0080DB75 /* UIQueryAll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQueryAll.m; sourceTree = "<group>"; };
+		2F13B45B13E1193B0080DB75 /* UIQueryExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQueryExpectation.h; sourceTree = "<group>"; };
+		2F13B45C13E1193B0080DB75 /* UIQueryExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQueryExpectation.m; sourceTree = "<group>"; };
+		2F13B45D13E1193B0080DB75 /* UIRedoer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRedoer.h; sourceTree = "<group>"; };
+		2F13B45E13E1193B0080DB75 /* UIRedoer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRedoer.m; sourceTree = "<group>"; };
+		2F13B45F13E1193B0080DB75 /* UISwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISwizzle.h; sourceTree = "<group>"; };
+		2F13B46013E1193B0080DB75 /* UISwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISwizzle.m; sourceTree = "<group>"; };
+		2F13B46113E1193B0080DB75 /* UITraversal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITraversal.h; sourceTree = "<group>"; };
+		2F13B46213E1193B0080DB75 /* UITraversal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITraversal.m; sourceTree = "<group>"; };
+		2F13B46313E1193B0080DB75 /* ViewFilterSwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewFilterSwizzler.h; sourceTree = "<group>"; };
+		2F13B46413E1193B0080DB75 /* ViewFilterSwizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewFilterSwizzler.m; sourceTree = "<group>"; };
+		2F13B46513E1193B0080DB75 /* UISpec.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UISpec.bundle; sourceTree = "<group>"; };
+		2F13B46613E1193B0080DB75 /* UISpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISpec.h; sourceTree = "<group>"; };
+		2F13B46713E1193B0080DB75 /* UISpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISpec.m; sourceTree = "<group>"; };
+		2F13B46913E1193B0080DB75 /* CallCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallCache.h; sourceTree = "<group>"; };
+		2F13B46A13E1193B0080DB75 /* CallCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallCache.m; sourceTree = "<group>"; };
+		2F13B46B13E1193B0080DB75 /* NSNumberCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNumberCreator.h; sourceTree = "<group>"; };
+		2F13B46C13E1193B0080DB75 /* NSNumberCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNumberCreator.m; sourceTree = "<group>"; };
+		2F13B46D13E1193B0080DB75 /* ReturnCacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReturnCacher.h; sourceTree = "<group>"; };
+		2F13B46E13E1193B0080DB75 /* ReturnCacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReturnCacher.m; sourceTree = "<group>"; };
+		2F13B46F13E1193B0080DB75 /* UIBug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBug.h; sourceTree = "<group>"; };
+		2F13B47013E1193B0080DB75 /* UIBug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBug.m; sourceTree = "<group>"; };
+		2F13B47113E1193B0080DB75 /* UIConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConsole.h; sourceTree = "<group>"; };
+		2F13B47213E1193B0080DB75 /* UIConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIConsole.m; sourceTree = "<group>"; };
+		2F13B47313E1193B0080DB75 /* UIInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIInspector.h; sourceTree = "<group>"; };
+		2F13B47413E1193B0080DB75 /* UIInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIInspector.m; sourceTree = "<group>"; };
+		2F13B47513E1193B0080DB75 /* UIProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIProxy.h; sourceTree = "<group>"; };
+		2F13B47613E1193B0080DB75 /* UIProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIProxy.m; sourceTree = "<group>"; };
+		2F13B47713E1193B0080DB75 /* WaitUntilIdle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitUntilIdle.h; sourceTree = "<group>"; };
+		2F13B47813E1193B0080DB75 /* WaitUntilIdle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitUntilIdle.m; sourceTree = "<group>"; };
+		2F13B47A13E1193B0080DB75 /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDData.h; path = lib/cocoahttpserver/DDData.h; sourceTree = "<group>"; };
+		2F13B47B13E1193B0080DB75 /* DDData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDData.m; path = lib/cocoahttpserver/DDData.m; sourceTree = "<group>"; };
+		2F13B47C13E1193B0080DB75 /* DDNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDNumber.h; path = lib/cocoahttpserver/DDNumber.h; sourceTree = "<group>"; };
+		2F13B47D13E1193B0080DB75 /* DDNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDNumber.m; path = lib/cocoahttpserver/DDNumber.m; sourceTree = "<group>"; };
+		2F13B47E13E1193B0080DB75 /* DDRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDRange.h; path = lib/cocoahttpserver/DDRange.h; sourceTree = "<group>"; };
+		2F13B47F13E1193B0080DB75 /* DDRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDRange.m; path = lib/cocoahttpserver/DDRange.m; sourceTree = "<group>"; };
+		2F13B48013E1193B0080DB75 /* HTTPAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPAuthenticationRequest.h; path = lib/cocoahttpserver/HTTPAuthenticationRequest.h; sourceTree = "<group>"; };
+		2F13B48113E1193B0080DB75 /* HTTPAuthenticationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPAuthenticationRequest.m; path = lib/cocoahttpserver/HTTPAuthenticationRequest.m; sourceTree = "<group>"; };
+		2F13B48213E1193B0080DB75 /* HTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPConnection.h; path = lib/cocoahttpserver/HTTPConnection.h; sourceTree = "<group>"; };
+		2F13B48313E1193B0080DB75 /* HTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPConnection.m; path = lib/cocoahttpserver/HTTPConnection.m; sourceTree = "<group>"; };
+		2F13B48413E1193B0080DB75 /* HTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPResponse.h; path = lib/cocoahttpserver/HTTPResponse.h; sourceTree = "<group>"; };
+		2F13B48513E1193B0080DB75 /* HTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPResponse.m; path = lib/cocoahttpserver/HTTPResponse.m; sourceTree = "<group>"; };
+		2F13B48613E1193B0080DB75 /* HTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPServer.h; path = lib/cocoahttpserver/HTTPServer.h; sourceTree = "<group>"; };
+		2F13B48713E1193B0080DB75 /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPServer.m; path = lib/cocoahttpserver/HTTPServer.m; sourceTree = "<group>"; };
+		2F13B48813E1193B0080DB75 /* MyHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyHTTPConnection.h; path = lib/cocoahttpserver/MyHTTPConnection.h; sourceTree = "<group>"; };
+		2F13B48913E1193B0080DB75 /* MyHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyHTTPConnection.m; path = lib/cocoahttpserver/MyHTTPConnection.m; sourceTree = "<group>"; };
+		2F13B48A13E1193B0080DB75 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncSocket.h; path = lib/cocoahttpserver/AsyncSocket.h; sourceTree = "<group>"; };
+		2F13B48B13E1193B0080DB75 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncSocket.m; path = lib/cocoahttpserver/AsyncSocket.m; sourceTree = "<group>"; };
+		2F13B4EB13E119400080DB75 /* env.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = env.rb; sourceTree = "<group>"; };
+		2F13B4EC13E119400080DB75 /* frank_helper.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = frank_helper.rb; sourceTree = "<group>"; };
+		2F13B4ED13E119560080DB75 /* frank_static_resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = frank_static_resources.bundle; sourceTree = "<group>"; };
+		2F13B50013E119720080DB75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2F13B59313E11C5D0080DB75 /* libFrankLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFrankLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F13B65D13E120B30080DB75 /* VisibleTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisibleTouch.h; sourceTree = "<group>"; };
+		2F13B65E13E120B30080DB75 /* VisibleTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisibleTouch.m; sourceTree = "<group>"; };
+		2F13B6B213E1219C0080DB75 /* AccessibilityCheckCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccessibilityCheckCommand.h; path = src/AccessibilityCheckCommand.h; sourceTree = "<group>"; };
+		2F13B6B313E1219C0080DB75 /* AccessibilityCheckCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccessibilityCheckCommand.m; path = src/AccessibilityCheckCommand.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* FrankLib_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrankLib_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libFrankLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFrankLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F13B58D13E11C5D0080DB75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F13B58E13E11C5D0080DB75 /* Foundation.framework in Frameworks */,
+				2F13B58F13E11C5D0080DB75 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				2F13B50113E119720080DB75 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libFrankLib.a */,
+				2F13B59313E11C5D0080DB75 /* libFrankLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* FrankLib */ = {
+			isa = PBXGroup;
+			children = (
+				2F13B4ED13E119560080DB75 /* frank_static_resources.bundle */,
+				2F13B4EA13E119400080DB75 /* cucumber */,
+				2F13B42613E1193B0080DB75 /* 3rd Party */,
+				2F13B3F913E119340080DB75 /* src */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = FrankLib;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+				2F13B50013E119720080DB75 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F13B3F913E119340080DB75 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2F13B6B213E1219C0080DB75 /* AccessibilityCheckCommand.h */,
+				2F13B6B313E1219C0080DB75 /* AccessibilityCheckCommand.m */,
+				2F13B3FA13E119340080DB75 /* OrientationCommand.m */,
+				2F13B3FB13E119340080DB75 /* OrientationCommand.h */,
+				2F13B3FC13E119340080DB75 /* AppCommand.m */,
+				2F13B3FD13E119340080DB75 /* AppCommand.h */,
+				2F13B3FE13E119340080DB75 /* Operation.h */,
+				2F13B3FF13E119340080DB75 /* Operation.m */,
+				2F13B40013E119340080DB75 /* DumpCommand.h */,
+				2F13B40113E119340080DB75 /* DumpCommand.m */,
+				2F13B40213E119340080DB75 /* FrankCommandRoute.h */,
+				2F13B40313E119340080DB75 /* FrankCommandRoute.m */,
+				2F13B40413E119340080DB75 /* FrankServer.h */,
+				2F13B40513E119340080DB75 /* FrankServer.m */,
+				2F13B40613E119340080DB75 /* MapOperationCommand.h */,
+				2F13B40713E119340080DB75 /* MapOperationCommand.m */,
+				2F13B40813E119340080DB75 /* RequestRouter.h */,
+				2F13B40913E119340080DB75 /* RequestRouter.m */,
+				2F13B40A13E119340080DB75 /* RoutingHTTPConnection.h */,
+				2F13B40B13E119340080DB75 /* RoutingHTTPConnection.m */,
+				2F13B40C13E119340080DB75 /* StaticResourcesRoute.h */,
+				2F13B40D13E119340080DB75 /* StaticResourcesRoute.m */,
+				2F13B40E13E119340080DB75 /* UISpecCommandReceiver.h */,
+				2F13B40F13E119340080DB75 /* UISpecCommandReceiver.m */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		2F13B42613E1193B0080DB75 /* 3rd Party */ = {
+			isa = PBXGroup;
+			children = (
+				2F13B47913E1193B0080DB75 /* cocoahttpserver */,
+				2F13B42713E1193B0080DB75 /* JSON */,
+				2F13B43513E1193B0080DB75 /* uispec */,
+			);
+			name = "3rd Party";
+			sourceTree = "<group>";
+		};
+		2F13B42713E1193B0080DB75 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				2F13B42813E1193B0080DB75 /* JSON.h */,
+				2F13B42913E1193B0080DB75 /* NSObject+SBJSON.h */,
+				2F13B42A13E1193B0080DB75 /* NSObject+SBJSON.m */,
+				2F13B42B13E1193B0080DB75 /* NSString+SBJSON.h */,
+				2F13B42C13E1193B0080DB75 /* NSString+SBJSON.m */,
+				2F13B42D13E1193B0080DB75 /* SBJSON.h */,
+				2F13B42E13E1193B0080DB75 /* SBJSON.m */,
+				2F13B42F13E1193B0080DB75 /* SBJsonBase.h */,
+				2F13B43013E1193B0080DB75 /* SBJsonBase.m */,
+				2F13B43113E1193B0080DB75 /* SBJsonParser.h */,
+				2F13B43213E1193B0080DB75 /* SBJsonParser.m */,
+				2F13B43313E1193B0080DB75 /* SBJsonWriter.h */,
+				2F13B43413E1193B0080DB75 /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			path = lib/JSON;
+			sourceTree = "<group>";
+		};
+		2F13B43513E1193B0080DB75 /* uispec */ = {
+			isa = PBXGroup;
+			children = (
+				2F13B43613E1193B0080DB75 /* components */,
+				2F13B44513E1193B0080DB75 /* dsl */,
+				2F13B46513E1193B0080DB75 /* UISpec.bundle */,
+				2F13B46613E1193B0080DB75 /* UISpec.h */,
+				2F13B46713E1193B0080DB75 /* UISpec.m */,
+				2F13B46813E1193B0080DB75 /* utils */,
+			);
+			name = uispec;
+			path = lib/uispec;
+			sourceTree = "<group>";
+		};
+		2F13B43613E1193B0080DB75 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				2F13B43713E1193B0080DB75 /* UIQueryScrollView.h */,
+				2F13B43813E1193B0080DB75 /* UIQueryScrollView.m */,
+				2F13B43913E1193B0080DB75 /* UIQuerySearchBar.h */,
+				2F13B43A13E1193B0080DB75 /* UIQuerySearchBar.m */,
+				2F13B43B13E1193B0080DB75 /* UIQuerySegmentedControl.h */,
+				2F13B43C13E1193B0080DB75 /* UIQuerySegmentedControl.m */,
+				2F13B43D13E1193B0080DB75 /* UIQueryTabBar.h */,
+				2F13B43E13E1193B0080DB75 /* UIQueryTabBar.m */,
+				2F13B43F13E1193B0080DB75 /* UIQueryTableView.h */,
+				2F13B44013E1193B0080DB75 /* UIQueryTableView.m */,
+				2F13B44113E1193B0080DB75 /* UIQueryTableViewCell.h */,
+				2F13B44213E1193B0080DB75 /* UIQueryTableViewCell.m */,
+				2F13B44313E1193B0080DB75 /* UIQueryWebView.h */,
+				2F13B44413E1193B0080DB75 /* UIQueryWebView.m */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		2F13B44513E1193B0080DB75 /* dsl */ = {
+			isa = PBXGroup;
+			children = (
+				2F13B44613E1193B0080DB75 /* Recordable.h */,
+				2F13B44713E1193B0080DB75 /* Recordable.m */,
+				2F13B44813E1193B0080DB75 /* UIChildren.h */,
+				2F13B44913E1193B0080DB75 /* UIChildren.m */,
+				2F13B44A13E1193B0080DB75 /* UIConsoleLog.h */,
+				2F13B44B13E1193B0080DB75 /* UIConsoleLog.m */,
+				2F13B44C13E1193B0080DB75 /* UIDescendants.h */,
+				2F13B44D13E1193B0080DB75 /* UIDescendants.m */,
+				2F13B44E13E1193B0080DB75 /* UIExpectation.h */,
+				2F13B44F13E1193B0080DB75 /* UIExpectation.m */,
+				2F13B45013E1193B0080DB75 /* UIFilter.h */,
+				2F13B45113E1193B0080DB75 /* UIFilter.m */,
+				2F13B45213E1193B0080DB75 /* UILog.h */,
+				2F13B45313E1193B0080DB75 /* UIMatcher.h */,
+				2F13B45413E1193B0080DB75 /* UIMatcher.m */,
+				2F13B45513E1193B0080DB75 /* UIParents.h */,
+				2F13B45613E1193B0080DB75 /* UIParents.m */,
+				2F13B45713E1193B0080DB75 /* UIQuery.h */,
+				2F13B45813E1193B0080DB75 /* UIQuery.m */,
+				2F13B45913E1193B0080DB75 /* UIQueryAll.h */,
+				2F13B45A13E1193B0080DB75 /* UIQueryAll.m */,
+				2F13B45B13E1193B0080DB75 /* UIQueryExpectation.h */,
+				2F13B45C13E1193B0080DB75 /* UIQueryExpectation.m */,
+				2F13B45D13E1193B0080DB75 /* UIRedoer.h */,
+				2F13B45E13E1193B0080DB75 /* UIRedoer.m */,
+				2F13B45F13E1193B0080DB75 /* UISwizzle.h */,
+				2F13B46013E1193B0080DB75 /* UISwizzle.m */,
+				2F13B46113E1193B0080DB75 /* UITraversal.h */,
+				2F13B46213E1193B0080DB75 /* UITraversal.m */,
+				2F13B65D13E120B30080DB75 /* VisibleTouch.h */,
+				2F13B65E13E120B30080DB75 /* VisibleTouch.m */,
+				2F13B46313E1193B0080DB75 /* ViewFilterSwizzler.h */,
+				2F13B46413E1193B0080DB75 /* ViewFilterSwizzler.m */,
+			);
+			path = dsl;
+			sourceTree = "<group>";
+		};
+		2F13B46813E1193B0080DB75 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				2F13B46913E1193B0080DB75 /* CallCache.h */,
+				2F13B46A13E1193B0080DB75 /* CallCache.m */,
+				2F13B46B13E1193B0080DB75 /* NSNumberCreator.h */,
+				2F13B46C13E1193B0080DB75 /* NSNumberCreator.m */,
+				2F13B46D13E1193B0080DB75 /* ReturnCacher.h */,
+				2F13B46E13E1193B0080DB75 /* ReturnCacher.m */,
+				2F13B46F13E1193B0080DB75 /* UIBug.h */,
+				2F13B47013E1193B0080DB75 /* UIBug.m */,
+				2F13B47113E1193B0080DB75 /* UIConsole.h */,
+				2F13B47213E1193B0080DB75 /* UIConsole.m */,
+				2F13B47313E1193B0080DB75 /* UIInspector.h */,
+				2F13B47413E1193B0080DB75 /* UIInspector.m */,
+				2F13B47513E1193B0080DB75 /* UIProxy.h */,
+				2F13B47613E1193B0080DB75 /* UIProxy.m */,
+				2F13B47713E1193B0080DB75 /* WaitUntilIdle.h */,
+				2F13B47813E1193B0080DB75 /* WaitUntilIdle.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		2F13B47913E1193B0080DB75 /* cocoahttpserver */ = {
+			isa = PBXGroup;
+			children = (
+				2F13B47A13E1193B0080DB75 /* DDData.h */,
+				2F13B47B13E1193B0080DB75 /* DDData.m */,
+				2F13B47C13E1193B0080DB75 /* DDNumber.h */,
+				2F13B47D13E1193B0080DB75 /* DDNumber.m */,
+				2F13B47E13E1193B0080DB75 /* DDRange.h */,
+				2F13B47F13E1193B0080DB75 /* DDRange.m */,
+				2F13B48013E1193B0080DB75 /* HTTPAuthenticationRequest.h */,
+				2F13B48113E1193B0080DB75 /* HTTPAuthenticationRequest.m */,
+				2F13B48213E1193B0080DB75 /* HTTPConnection.h */,
+				2F13B48313E1193B0080DB75 /* HTTPConnection.m */,
+				2F13B48413E1193B0080DB75 /* HTTPResponse.h */,
+				2F13B48513E1193B0080DB75 /* HTTPResponse.m */,
+				2F13B48613E1193B0080DB75 /* HTTPServer.h */,
+				2F13B48713E1193B0080DB75 /* HTTPServer.m */,
+				2F13B48813E1193B0080DB75 /* MyHTTPConnection.h */,
+				2F13B48913E1193B0080DB75 /* MyHTTPConnection.m */,
+				2F13B48A13E1193B0080DB75 /* AsyncSocket.h */,
+				2F13B48B13E1193B0080DB75 /* AsyncSocket.m */,
+			);
+			name = cocoahttpserver;
+			sourceTree = "<group>";
+		};
+		2F13B4EA13E119400080DB75 /* cucumber */ = {
+			isa = PBXGroup;
+			children = (
+				2F13B4EB13E119400080DB75 /* env.rb */,
+				2F13B4EC13E119400080DB75 /* frank_helper.rb */,
+			);
+			path = cucumber;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* FrankLib_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2F13B51613E11C5D0080DB75 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F13B51D13E11C5D0080DB75 /* FrankServer.h in Headers */,
+				2F13B66A13E120EA0080DB75 /* VisibleTouch.h in Headers */,
+				2F13B66B13E120F50080DB75 /* Recordable.h in Headers */,
+				2F13B66C13E121060080DB75 /* UIChildren.h in Headers */,
+				2F13B66D13E1210B0080DB75 /* UIConsoleLog.h in Headers */,
+				2F13B66E13E1210D0080DB75 /* UIDescendants.h in Headers */,
+				2F13B66F13E1210E0080DB75 /* UIExpectation.h in Headers */,
+				2F13B67013E1210E0080DB75 /* UIFilter.h in Headers */,
+				2F13B67113E1210F0080DB75 /* UILog.h in Headers */,
+				2F13B67213E1210F0080DB75 /* UIMatcher.h in Headers */,
+				2F13B67313E1210F0080DB75 /* UIParents.h in Headers */,
+				2F13B67413E1210F0080DB75 /* UIQuery.h in Headers */,
+				2F13B67513E1210F0080DB75 /* UIQueryAll.h in Headers */,
+				2F13B67613E121100080DB75 /* UIQueryExpectation.h in Headers */,
+				2F13B67713E121100080DB75 /* UIRedoer.h in Headers */,
+				2F13B67813E121100080DB75 /* UISwizzle.h in Headers */,
+				2F13B67913E121100080DB75 /* UITraversal.h in Headers */,
+				2F13B67A13E121110080DB75 /* ViewFilterSwizzler.h in Headers */,
+				2F13B67B13E121170080DB75 /* UIQueryScrollView.h in Headers */,
+				2F13B67C13E121180080DB75 /* UIQuerySearchBar.h in Headers */,
+				2F13B67D13E121180080DB75 /* UIQuerySegmentedControl.h in Headers */,
+				2F13B67E13E121180080DB75 /* UIQueryTabBar.h in Headers */,
+				2F13B67F13E121190080DB75 /* UIQueryTableView.h in Headers */,
+				2F13B68013E121190080DB75 /* UIQueryTableViewCell.h in Headers */,
+				2F13B68113E121190080DB75 /* UIQueryWebView.h in Headers */,
+				2F13B68213E121260080DB75 /* JSON.h in Headers */,
+				2F13B68313E121270080DB75 /* NSObject+SBJSON.h in Headers */,
+				2F13B68413E121290080DB75 /* NSString+SBJSON.h in Headers */,
+				2F13B68513E1212A0080DB75 /* SBJSON.h in Headers */,
+				2F13B68613E1212B0080DB75 /* SBJsonBase.h in Headers */,
+				2F13B68713E1212B0080DB75 /* SBJsonParser.h in Headers */,
+				2F13B68813E1212C0080DB75 /* SBJsonWriter.h in Headers */,
+				2F13B68913E121330080DB75 /* AsyncSocket.h in Headers */,
+				2F13B68A13E121350080DB75 /* DDData.h in Headers */,
+				2F13B68E13E1213A0080DB75 /* DDNumber.h in Headers */,
+				2F13B68F13E1213A0080DB75 /* DDRange.h in Headers */,
+				2F13B69013E1213B0080DB75 /* HTTPAuthenticationRequest.h in Headers */,
+				2F13B69113E1213C0080DB75 /* HTTPConnection.h in Headers */,
+				2F13B69213E1213D0080DB75 /* HTTPResponse.h in Headers */,
+				2F13B69313E1213E0080DB75 /* HTTPServer.h in Headers */,
+				2F13B69413E1213F0080DB75 /* MyHTTPConnection.h in Headers */,
+				2F13B69A13E121500080DB75 /* UISpec.h in Headers */,
+				2F13B69B13E121580080DB75 /* CallCache.h in Headers */,
+				2F13B69C13E121590080DB75 /* NSNumberCreator.h in Headers */,
+				2F13B69D13E1215A0080DB75 /* ReturnCacher.h in Headers */,
+				2F13B69E13E1215B0080DB75 /* UIBug.h in Headers */,
+				2F13B69F13E1215B0080DB75 /* UIConsole.h in Headers */,
+				2F13B6A013E1215C0080DB75 /* UIInspector.h in Headers */,
+				2F13B6A113E1215D0080DB75 /* UIProxy.h in Headers */,
+				2F13B6A213E1215D0080DB75 /* WaitUntilIdle.h in Headers */,
+				2F13B6A313E121630080DB75 /* RoutingHTTPConnection.h in Headers */,
+				2F13B6A413E121640080DB75 /* DumpCommand.h in Headers */,
+				2F13B6A513E121640080DB75 /* AppCommand.h in Headers */,
+				2F13B6A613E121650080DB75 /* FrankCommandRoute.h in Headers */,
+				2F13B6A713E121650080DB75 /* StaticResourcesRoute.h in Headers */,
+				2F13B6A813E121660080DB75 /* Operation.h in Headers */,
+				2F13B6A913E121670080DB75 /* RequestRouter.h in Headers */,
+				2F13B6AA13E121670080DB75 /* MapOperationCommand.h in Headers */,
+				2F13B6AB13E121680080DB75 /* UISpecCommandReceiver.h in Headers */,
+				2F13B6AC13E121690080DB75 /* OrientationCommand.h in Headers */,
+				2F13B6AD13E1216D0080DB75 /* FrankLib_Prefix.pch in Headers */,
+				2F13B6B413E1219C0080DB75 /* AccessibilityCheckCommand.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* FrankLib_Prefix.pch in Headers */,
+				2F13B41113E119340080DB75 /* OrientationCommand.h in Headers */,
+				2F13B41313E119340080DB75 /* AppCommand.h in Headers */,
+				2F13B41413E119340080DB75 /* Operation.h in Headers */,
+				2F13B41613E119340080DB75 /* DumpCommand.h in Headers */,
+				2F13B41813E119340080DB75 /* FrankCommandRoute.h in Headers */,
+				2F13B41A13E119340080DB75 /* FrankServer.h in Headers */,
+				2F13B41C13E119340080DB75 /* MapOperationCommand.h in Headers */,
+				2F13B41E13E119340080DB75 /* RequestRouter.h in Headers */,
+				2F13B42013E119340080DB75 /* RoutingHTTPConnection.h in Headers */,
+				2F13B42213E119340080DB75 /* StaticResourcesRoute.h in Headers */,
+				2F13B42413E119340080DB75 /* UISpecCommandReceiver.h in Headers */,
+				2F13B48C13E1193B0080DB75 /* JSON.h in Headers */,
+				2F13B48D13E1193B0080DB75 /* NSObject+SBJSON.h in Headers */,
+				2F13B48F13E1193B0080DB75 /* NSString+SBJSON.h in Headers */,
+				2F13B49113E1193B0080DB75 /* SBJSON.h in Headers */,
+				2F13B49313E1193B0080DB75 /* SBJsonBase.h in Headers */,
+				2F13B49513E1193B0080DB75 /* SBJsonParser.h in Headers */,
+				2F13B49713E1193B0080DB75 /* SBJsonWriter.h in Headers */,
+				2F13B49913E1193B0080DB75 /* UIQueryScrollView.h in Headers */,
+				2F13B49B13E1193B0080DB75 /* UIQuerySearchBar.h in Headers */,
+				2F13B49D13E1193B0080DB75 /* UIQuerySegmentedControl.h in Headers */,
+				2F13B49F13E1193B0080DB75 /* UIQueryTabBar.h in Headers */,
+				2F13B4A113E1193B0080DB75 /* UIQueryTableView.h in Headers */,
+				2F13B4A313E1193B0080DB75 /* UIQueryTableViewCell.h in Headers */,
+				2F13B4A513E1193B0080DB75 /* UIQueryWebView.h in Headers */,
+				2F13B4A713E1193B0080DB75 /* Recordable.h in Headers */,
+				2F13B4A913E1193B0080DB75 /* UIChildren.h in Headers */,
+				2F13B4AB13E1193B0080DB75 /* UIConsoleLog.h in Headers */,
+				2F13B4AD13E1193B0080DB75 /* UIDescendants.h in Headers */,
+				2F13B4AF13E1193B0080DB75 /* UIExpectation.h in Headers */,
+				2F13B4B113E1193B0080DB75 /* UIFilter.h in Headers */,
+				2F13B4B313E1193B0080DB75 /* UILog.h in Headers */,
+				2F13B4B413E1193B0080DB75 /* UIMatcher.h in Headers */,
+				2F13B4B613E1193B0080DB75 /* UIParents.h in Headers */,
+				2F13B4B813E1193B0080DB75 /* UIQuery.h in Headers */,
+				2F13B4BA13E1193B0080DB75 /* UIQueryAll.h in Headers */,
+				2F13B4BC13E1193B0080DB75 /* UIQueryExpectation.h in Headers */,
+				2F13B4BE13E1193B0080DB75 /* UIRedoer.h in Headers */,
+				2F13B4C013E1193B0080DB75 /* UISwizzle.h in Headers */,
+				2F13B4C213E1193B0080DB75 /* UITraversal.h in Headers */,
+				2F13B4C413E1193B0080DB75 /* ViewFilterSwizzler.h in Headers */,
+				2F13B4C613E1193B0080DB75 /* UISpec.h in Headers */,
+				2F13B4C813E1193B0080DB75 /* CallCache.h in Headers */,
+				2F13B4CA13E1193B0080DB75 /* NSNumberCreator.h in Headers */,
+				2F13B4CC13E1193B0080DB75 /* ReturnCacher.h in Headers */,
+				2F13B4CE13E1193B0080DB75 /* UIBug.h in Headers */,
+				2F13B4D013E1193B0080DB75 /* UIConsole.h in Headers */,
+				2F13B4D213E1193B0080DB75 /* UIInspector.h in Headers */,
+				2F13B4D413E1193B0080DB75 /* UIProxy.h in Headers */,
+				2F13B4D613E1193B0080DB75 /* WaitUntilIdle.h in Headers */,
+				2F13B4D813E1193B0080DB75 /* DDData.h in Headers */,
+				2F13B4DA13E1193B0080DB75 /* DDNumber.h in Headers */,
+				2F13B4DC13E1193B0080DB75 /* DDRange.h in Headers */,
+				2F13B4DE13E1193B0080DB75 /* HTTPAuthenticationRequest.h in Headers */,
+				2F13B4E013E1193B0080DB75 /* HTTPConnection.h in Headers */,
+				2F13B4E213E1193B0080DB75 /* HTTPResponse.h in Headers */,
+				2F13B4E413E1193B0080DB75 /* HTTPServer.h in Headers */,
+				2F13B4E613E1193B0080DB75 /* MyHTTPConnection.h in Headers */,
+				2F13B4E813E1193B0080DB75 /* AsyncSocket.h in Headers */,
+				2F13B65F13E120B30080DB75 /* VisibleTouch.h in Headers */,
+				2F13B6B613E1219C0080DB75 /* AccessibilityCheckCommand.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2F13B51513E11C5D0080DB75 /* FrankLib simulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F13B59013E11C5D0080DB75 /* Build configuration list for PBXNativeTarget "FrankLib simulator" */;
+			buildPhases = (
+				2F13B55313E11C5D0080DB75 /* Sources */,
+				2F13B58D13E11C5D0080DB75 /* Frameworks */,
+				2F13B51613E11C5D0080DB75 /* Headers */,
+				2F13B70313E12CED0080DB75 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FrankLib simulator";
+			productName = FrankLib;
+			productReference = 2F13B59313E11C5D0080DB75 /* libFrankLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2AAC07D0554694100DB518D /* FrankLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "FrankLib" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FrankLib;
+			productName = FrankLib;
+			productReference = D2AAC07E0554694100DB518D /* libFrankLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "FrankLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* FrankLib */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* FrankLib */,
+				2F13B51513E11C5D0080DB75 /* FrankLib simulator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F13B55313E11C5D0080DB75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F13B55413E11C5D0080DB75 /* OrientationCommand.m in Sources */,
+				2F13B55513E11C5D0080DB75 /* AppCommand.m in Sources */,
+				2F13B55613E11C5D0080DB75 /* Operation.m in Sources */,
+				2F13B55713E11C5D0080DB75 /* DumpCommand.m in Sources */,
+				2F13B55813E11C5D0080DB75 /* FrankCommandRoute.m in Sources */,
+				2F13B55913E11C5D0080DB75 /* FrankServer.m in Sources */,
+				2F13B55A13E11C5D0080DB75 /* MapOperationCommand.m in Sources */,
+				2F13B55B13E11C5D0080DB75 /* RequestRouter.m in Sources */,
+				2F13B55C13E11C5D0080DB75 /* RoutingHTTPConnection.m in Sources */,
+				2F13B55D13E11C5D0080DB75 /* StaticResourcesRoute.m in Sources */,
+				2F13B55E13E11C5D0080DB75 /* UISpecCommandReceiver.m in Sources */,
+				2F13B55F13E11C5D0080DB75 /* NSObject+SBJSON.m in Sources */,
+				2F13B56013E11C5D0080DB75 /* NSString+SBJSON.m in Sources */,
+				2F13B56113E11C5D0080DB75 /* SBJSON.m in Sources */,
+				2F13B56213E11C5D0080DB75 /* SBJsonBase.m in Sources */,
+				2F13B56313E11C5D0080DB75 /* SBJsonParser.m in Sources */,
+				2F13B56413E11C5D0080DB75 /* SBJsonWriter.m in Sources */,
+				2F13B56513E11C5D0080DB75 /* UIQueryScrollView.m in Sources */,
+				2F13B56613E11C5D0080DB75 /* UIQuerySearchBar.m in Sources */,
+				2F13B56713E11C5D0080DB75 /* UIQuerySegmentedControl.m in Sources */,
+				2F13B56813E11C5D0080DB75 /* UIQueryTabBar.m in Sources */,
+				2F13B56913E11C5D0080DB75 /* UIQueryTableView.m in Sources */,
+				2F13B56A13E11C5D0080DB75 /* UIQueryTableViewCell.m in Sources */,
+				2F13B56B13E11C5D0080DB75 /* UIQueryWebView.m in Sources */,
+				2F13B56C13E11C5D0080DB75 /* Recordable.m in Sources */,
+				2F13B56D13E11C5D0080DB75 /* UIChildren.m in Sources */,
+				2F13B56E13E11C5D0080DB75 /* UIConsoleLog.m in Sources */,
+				2F13B56F13E11C5D0080DB75 /* UIDescendants.m in Sources */,
+				2F13B57013E11C5D0080DB75 /* UIExpectation.m in Sources */,
+				2F13B57113E11C5D0080DB75 /* UIFilter.m in Sources */,
+				2F13B57213E11C5D0080DB75 /* UIMatcher.m in Sources */,
+				2F13B57313E11C5D0080DB75 /* UIParents.m in Sources */,
+				2F13B57413E11C5D0080DB75 /* UIQuery.m in Sources */,
+				2F13B57513E11C5D0080DB75 /* UIQueryAll.m in Sources */,
+				2F13B57613E11C5D0080DB75 /* UIQueryExpectation.m in Sources */,
+				2F13B57713E11C5D0080DB75 /* UIRedoer.m in Sources */,
+				2F13B57813E11C5D0080DB75 /* UISwizzle.m in Sources */,
+				2F13B57913E11C5D0080DB75 /* UITraversal.m in Sources */,
+				2F13B57A13E11C5D0080DB75 /* ViewFilterSwizzler.m in Sources */,
+				2F13B57B13E11C5D0080DB75 /* UISpec.m in Sources */,
+				2F13B57C13E11C5D0080DB75 /* CallCache.m in Sources */,
+				2F13B57D13E11C5D0080DB75 /* NSNumberCreator.m in Sources */,
+				2F13B57E13E11C5D0080DB75 /* ReturnCacher.m in Sources */,
+				2F13B57F13E11C5D0080DB75 /* UIBug.m in Sources */,
+				2F13B58013E11C5D0080DB75 /* UIConsole.m in Sources */,
+				2F13B58113E11C5D0080DB75 /* UIInspector.m in Sources */,
+				2F13B58213E11C5D0080DB75 /* UIProxy.m in Sources */,
+				2F13B58313E11C5D0080DB75 /* WaitUntilIdle.m in Sources */,
+				2F13B58413E11C5D0080DB75 /* DDData.m in Sources */,
+				2F13B58513E11C5D0080DB75 /* DDNumber.m in Sources */,
+				2F13B58613E11C5D0080DB75 /* DDRange.m in Sources */,
+				2F13B58713E11C5D0080DB75 /* HTTPAuthenticationRequest.m in Sources */,
+				2F13B58813E11C5D0080DB75 /* HTTPConnection.m in Sources */,
+				2F13B58913E11C5D0080DB75 /* HTTPResponse.m in Sources */,
+				2F13B58A13E11C5D0080DB75 /* HTTPServer.m in Sources */,
+				2F13B58B13E11C5D0080DB75 /* MyHTTPConnection.m in Sources */,
+				2F13B58C13E11C5D0080DB75 /* AsyncSocket.m in Sources */,
+				2F13B66913E120E90080DB75 /* VisibleTouch.m in Sources */,
+				2F13B6B513E1219C0080DB75 /* AccessibilityCheckCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F13B41013E119340080DB75 /* OrientationCommand.m in Sources */,
+				2F13B41213E119340080DB75 /* AppCommand.m in Sources */,
+				2F13B41513E119340080DB75 /* Operation.m in Sources */,
+				2F13B41713E119340080DB75 /* DumpCommand.m in Sources */,
+				2F13B41913E119340080DB75 /* FrankCommandRoute.m in Sources */,
+				2F13B41B13E119340080DB75 /* FrankServer.m in Sources */,
+				2F13B41D13E119340080DB75 /* MapOperationCommand.m in Sources */,
+				2F13B41F13E119340080DB75 /* RequestRouter.m in Sources */,
+				2F13B42113E119340080DB75 /* RoutingHTTPConnection.m in Sources */,
+				2F13B42313E119340080DB75 /* StaticResourcesRoute.m in Sources */,
+				2F13B42513E119340080DB75 /* UISpecCommandReceiver.m in Sources */,
+				2F13B48E13E1193B0080DB75 /* NSObject+SBJSON.m in Sources */,
+				2F13B49013E1193B0080DB75 /* NSString+SBJSON.m in Sources */,
+				2F13B49213E1193B0080DB75 /* SBJSON.m in Sources */,
+				2F13B49413E1193B0080DB75 /* SBJsonBase.m in Sources */,
+				2F13B49613E1193B0080DB75 /* SBJsonParser.m in Sources */,
+				2F13B49813E1193B0080DB75 /* SBJsonWriter.m in Sources */,
+				2F13B49A13E1193B0080DB75 /* UIQueryScrollView.m in Sources */,
+				2F13B49C13E1193B0080DB75 /* UIQuerySearchBar.m in Sources */,
+				2F13B49E13E1193B0080DB75 /* UIQuerySegmentedControl.m in Sources */,
+				2F13B4A013E1193B0080DB75 /* UIQueryTabBar.m in Sources */,
+				2F13B4A213E1193B0080DB75 /* UIQueryTableView.m in Sources */,
+				2F13B4A413E1193B0080DB75 /* UIQueryTableViewCell.m in Sources */,
+				2F13B4A613E1193B0080DB75 /* UIQueryWebView.m in Sources */,
+				2F13B4A813E1193B0080DB75 /* Recordable.m in Sources */,
+				2F13B4AA13E1193B0080DB75 /* UIChildren.m in Sources */,
+				2F13B4AC13E1193B0080DB75 /* UIConsoleLog.m in Sources */,
+				2F13B4AE13E1193B0080DB75 /* UIDescendants.m in Sources */,
+				2F13B4B013E1193B0080DB75 /* UIExpectation.m in Sources */,
+				2F13B4B213E1193B0080DB75 /* UIFilter.m in Sources */,
+				2F13B4B513E1193B0080DB75 /* UIMatcher.m in Sources */,
+				2F13B4B713E1193B0080DB75 /* UIParents.m in Sources */,
+				2F13B4B913E1193B0080DB75 /* UIQuery.m in Sources */,
+				2F13B4BB13E1193B0080DB75 /* UIQueryAll.m in Sources */,
+				2F13B4BD13E1193B0080DB75 /* UIQueryExpectation.m in Sources */,
+				2F13B4BF13E1193B0080DB75 /* UIRedoer.m in Sources */,
+				2F13B4C113E1193B0080DB75 /* UISwizzle.m in Sources */,
+				2F13B4C313E1193B0080DB75 /* UITraversal.m in Sources */,
+				2F13B4C513E1193B0080DB75 /* ViewFilterSwizzler.m in Sources */,
+				2F13B4C713E1193B0080DB75 /* UISpec.m in Sources */,
+				2F13B4C913E1193B0080DB75 /* CallCache.m in Sources */,
+				2F13B4CB13E1193B0080DB75 /* NSNumberCreator.m in Sources */,
+				2F13B4CD13E1193B0080DB75 /* ReturnCacher.m in Sources */,
+				2F13B4CF13E1193B0080DB75 /* UIBug.m in Sources */,
+				2F13B4D113E1193B0080DB75 /* UIConsole.m in Sources */,
+				2F13B4D313E1193B0080DB75 /* UIInspector.m in Sources */,
+				2F13B4D513E1193B0080DB75 /* UIProxy.m in Sources */,
+				2F13B4D713E1193B0080DB75 /* WaitUntilIdle.m in Sources */,
+				2F13B4D913E1193B0080DB75 /* DDData.m in Sources */,
+				2F13B4DB13E1193B0080DB75 /* DDNumber.m in Sources */,
+				2F13B4DD13E1193B0080DB75 /* DDRange.m in Sources */,
+				2F13B4DF13E1193B0080DB75 /* HTTPAuthenticationRequest.m in Sources */,
+				2F13B4E113E1193B0080DB75 /* HTTPConnection.m in Sources */,
+				2F13B4E313E1193B0080DB75 /* HTTPResponse.m in Sources */,
+				2F13B4E513E1193B0080DB75 /* HTTPServer.m in Sources */,
+				2F13B4E713E1193B0080DB75 /* MyHTTPConnection.m in Sources */,
+				2F13B4E913E1193B0080DB75 /* AsyncSocket.m in Sources */,
+				2F13B66013E120B30080DB75 /* VisibleTouch.m in Sources */,
+				2F13B6B713E1219C0080DB75 /* AccessibilityCheckCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/FrankLib.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FrankLib_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = FrankLib;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/FrankLib.dst;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FrankLib_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = FrankLib;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2F13B59113E11C5D0080DB75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/FrankLib.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FrankLib_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = FrankLib;
+				PUBLIC_HEADERS_FOLDER_PATH = Headers;
+				SDKROOT = iphonesimulator;
+			};
+			name = Debug;
+		};
+		2F13B59213E11C5D0080DB75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/FrankLib.dst;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FrankLib_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = FrankLib;
+				PUBLIC_HEADERS_FOLDER_PATH = Headers;
+				SDKROOT = iphonesimulator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "FrankLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "FrankLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F13B59013E11C5D0080DB75 /* Build configuration list for PBXNativeTarget "FrankLib simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F13B59113E11C5D0080DB75 /* Debug */,
+				2F13B59213E11C5D0080DB75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
