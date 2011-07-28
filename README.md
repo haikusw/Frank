@@ -143,3 +143,18 @@ FAQ
 * ** Why isn't Frank compiled as a static library?**
 
 	Some of the functionality provided by UISpec does not appear to work when compiled in as a static library. If anyone has a way to make Frank work as a static library we'd love to hear about it!
+
+*update:* A first test project for this is included in this fork ("FrankLib.xcodeproj") 
+  This works in a simple test app with a very simple feature (I'm just starting to learn Frank).
+  The project isn't finished and is not ready for use - I just uploaded it so moredip could try it out.
+
+*Static Library Build/Use instruction:*
+  The "FrankLib simulator" target is the one that currently works (not sure if Frank works on a device yet or not, so haven't tested the plain "FrankLib" target which is what would build that.
+  Select the FrankLib target and then do a build.  In the "build" folder you'll find "Debug-iphonesimulator" with the following files in it:
+   - frank_static_resources.bundle
+   - Headers
+   - libFrankLib.a
+   add these three to your app project, and add the usual integration steps for Frank in your main.c file.
+   then, instead of adding -ObjC to  your "other linker flags", add "-all_load"
+   
+Should work as well as adding frank as a source project works.  It's possible we'll need to include other headers in the Headers folder during the Frank .a file build, but that was the only one I needed for my simple test.
